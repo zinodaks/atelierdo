@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { graphql } from "gatsby";
 import { RichText } from "prismic-reactjs";
 import styled from "styled-components";
@@ -83,7 +83,17 @@ const BottomBorder = styled.div`
 `;
 
 function FindUs({ slice }) {
+  const [isClient, setIsClient] = useState(false);
   const position = [-4.300619, 15.310679]; // City Market Coordinates
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  if (!isClient) {
+    return <p>Loading Map...</p>;
+  }
+
   return (
     <Wrapper>
       <Inner>
