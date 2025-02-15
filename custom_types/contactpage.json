@@ -1,0 +1,118 @@
+{
+  "Main": {
+    "uid": {
+      "type": "UID",
+      "config": {
+        "label": "contact"
+      }
+    },
+    "body": {
+      "type": "Slices",
+      "fieldset": "Slice zone",
+      "config": {
+        "labels": null,
+        "choices": {
+          "contact_form": {
+            "type": "Slice",
+            "fieldset": "Contact Form",
+            "description": "Contact Form",
+            "icon": "assignment",
+            "display": "list",
+            "non-repeat": {
+              "hint_text": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+                  "label": "Hint Text",
+                  "placeholder": "Hint Text"
+                }
+              },
+              "contact_title": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading2",
+                  "label": "Contact Title",
+                  "placeholder": "Contact Title"
+                }
+              },
+              "contact_subtitle": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+                  "label": "Contact Subtitle",
+                  "placeholder": "Contact Subtitle"
+                }
+              },
+              "form_title": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading3",
+                  "label": "Form Title",
+                  "placeholder": "Form Title"
+                }
+              },
+              "name_placeholder": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+                  "label": "Name Placeholder",
+                  "placeholder": "Name Placeholder"
+                }
+              },
+              "email_placeholder": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+                  "label": "Email Placeholder",
+                  "placeholder": "Email Placeholder"
+                }
+              },
+              "message_placeholder": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+                  "label": "Message Placeholder",
+                  "placeholder": "Message Placeholder"
+                }
+              },
+              "button_text": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+                  "label": "Button Text",
+                  "placeholder": "Button Text"
+                }
+              },
+              "success_message": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
+                  "label": "Success Message",
+                  "placeholder": "Success Message"
+                }
+              }
+            },
+            "repeat": {
+              "contact_top_text": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+                  "label": "Contact Top Text",
+                  "placeholder": "Contact Top Text"
+                }
+              },
+              "contact_bottom_text": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+                  "label": "Contact Bottom Text",
+                  "placeholder": "Contact Bottom Text"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

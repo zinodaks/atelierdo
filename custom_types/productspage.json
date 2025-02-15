@@ -1,0 +1,94 @@
+{
+    "Main": {
+        "uid": {
+            "type": "UID",
+            "config": {
+                "label": "products"
+            }
+        },
+        "products_title": {
+            "type": "StructuredText",
+            "config": {
+                "single": "heading1",
+                "label": "Products Title",
+                "placeholder": "Products Title"
+            }
+        },
+        "body": {
+            "type": "Slices",
+            "fieldset": "Slice zone",
+            "config": {
+                "labels": null,
+                "choices": {
+                    "productsgrid": {
+                        "type": "Slice",
+                        "fieldset": "ProductsGrid",
+                        "description": "Products Grid",
+                        "icon": "view_comfy",
+                        "display": "list",
+                        "non-repeat": {},
+                        "repeat": {
+                            "productimage": {
+                                "type": "Image",
+                                "config": {
+                                    "constraint": {},
+                                    "thumbnails": [],
+                                    "label": "Product Image"
+                                }
+                            },
+                            "product_title": {
+                                "type": "StructuredText",
+                                "config": {
+                                    "single": "heading3",
+                                    "label": "Product Title",
+                                    "placeholder": "Product Title"
+                                }
+                            },
+                            "product_description": {
+                                "type": "StructuredText",
+                                "config": {
+                                    "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+                                    "label": "Product Description",
+                                    "placeholder": "Product Description"
+                                }
+                            },
+                            "product_details": {
+                                "type": "Link",
+                                "config": {
+                                    "label": "Product Details",
+                                    "placeholder": "Product Details"
+                                }
+                            }
+                        }
+                    },
+                    "find_us": {
+                        "type": "Slice",
+                        "fieldset": "Find Us",
+                        "description": "Find Us",
+                        "icon": "aspect_ratio",
+                        "display": "list",
+                        "non-repeat": {
+                            "section_title": {
+                                "type": "StructuredText",
+                                "config": {
+                                    "single": "heading2",
+                                    "label": "Section Title",
+                                    "placeholder": "Section Title"
+                                }
+                            },
+                            "pop_up_text": {
+                                "type": "StructuredText",
+                                "config": {
+                                    "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+                                    "label": "Pop Up Text",
+                                    "placeholder": "Pop Up Text"
+                                }
+                            }
+                        },
+                        "repeat": {}
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "Main": {
+        "navbar_menu_items": {
+            "type": "Group",
+            "config": {
+                "fields": {
+                    "navbar_link_label": {
+                        "type": "StructuredText",
+                        "config": {
+                            "multi": "paragraph",
+                            "label": "Navbar Link Label",
+                            "placeholder": "Navbar Link Label"
+                        }
+                    },
+                    "navbar_link_url": {
+                        "type": "Link",
+                        "config": {
+                            "label": "Navbar Link Url",
+                            "placeholder": "Navbar Link Url",
+                            "select": null
+                        }
+                    }
+                },
+                "label": "Navbar menu Items"
+            }
+        }
+    }
+}

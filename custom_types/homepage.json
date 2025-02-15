@@ -1,0 +1,347 @@
+{
+  "Main": {
+    "uid": {
+      "type": "UID",
+      "config": {
+        "label": "home"
+      }
+    },
+    "body": {
+      "type": "Slices",
+      "fieldset": "Slice zone",
+      "config": {
+        "labels": null,
+        "choices": {
+          "hero": {
+            "type": "Slice",
+            "fieldset": "Hero",
+            "description": "Hero Slice",
+            "icon": "airplay",
+            "display": "list",
+            "non-repeat": {
+              "hero_title": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading1",
+                  "label": "Hero Title",
+                  "placeholder": "Hero TItle"
+                }
+              },
+              "hero_description": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,strong,em",
+                  "label": "Hero Description",
+                  "placeholder": "Hero Description"
+                }
+              },
+              "hero_button_placeholder": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,strong,em",
+                  "label": "Hero Button Placeholder",
+                  "placeholder": "Hero Button Placeholder"
+                }
+              }
+            },
+            "repeat": {}
+          },
+          "about": {
+            "type": "Slice",
+            "fieldset": "About",
+            "description": "About",
+            "icon": "art_track",
+            "display": "list",
+            "non-repeat": {
+              "title": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading1",
+                  "label": "Title",
+                  "placeholder": "Section Title"
+                }
+              },
+              "aboutusdescription": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
+                  "label": "AboutUsDescription1",
+                  "placeholder": "About Us Description"
+                }
+              },
+              "aboutusdescription2": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
+                  "label": "AboutUsDescription2",
+                  "placeholder": "About Us Description"
+                }
+              }
+            },
+            "repeat": {
+              "aboutgridimage": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "AboutGridImage"
+                }
+              }
+            }
+          },
+          "howitworks": {
+            "type": "Slice",
+            "fieldset": "HowItWorks",
+            "description": "How It Works",
+            "icon": "view_column",
+            "display": "list",
+            "non-repeat": {
+              "hint": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading3",
+                  "label": "Hint",
+                  "placeholder": "Hint Text"
+                }
+              },
+              "section_title": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading2",
+                  "label": "Section Title",
+                  "placeholder": "How It Works TItle"
+                }
+              },
+              "section_subtitle": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+                  "label": "Section Subtitle",
+                  "placeholder": "How It Works Subtitle"
+                }
+              }
+            },
+            "repeat": {
+              "step_icon": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "Step Icon"
+                }
+              },
+              "step_title": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading3",
+                  "label": "Step Title",
+                  "placeholder": "Step Title"
+                }
+              },
+              "step_description": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+                  "label": "Step Description",
+                  "placeholder": "Step Description"
+                }
+              }
+            }
+          },
+          "top_products": {
+            "type": "Slice",
+            "fieldset": "Top Products",
+            "description": "Top Products ",
+            "icon": "view_module",
+            "display": "list",
+            "non-repeat": {
+              "hint": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading3",
+                  "label": "Hint",
+                  "placeholder": "Top Products Hint"
+                }
+              },
+              "section_title": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading2",
+                  "label": "Section TItle",
+                  "placeholder": "Top Products Title"
+                }
+              },
+              "browse_title": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+                  "label": "Browse Title",
+                  "placeholder": "Browse Title"
+                }
+              },
+              "products_link": {
+                "type": "Link",
+                "config": {
+                  "label": "Products Link",
+                  "placeholder": "Products Link",
+                  "select": null
+                }
+              }
+            },
+            "repeat": {
+              "productimage": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "ProductImage"
+                }
+              },
+              "product_title": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading3",
+                  "label": "Product Title",
+                  "placeholder": "Product Title"
+                }
+              },
+              "product_description": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+                  "label": "Product Description",
+                  "placeholder": "Product Description"
+                }
+              },
+              "product_details_link": {
+                "type": "Link",
+                "config": {
+                  "label": "Product Details Link",
+                  "placeholder": "Product Details Link",
+                  "select": null
+                }
+              }
+            }
+          },
+          "contactus": {
+            "type": "Slice",
+            "fieldset": "ContactUs",
+            "description": "Contact Us ",
+            "icon": "reorder",
+            "display": "list",
+            "non-repeat": {
+              "hint": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading3",
+                  "label": "Hint",
+                  "placeholder": "Hint Text"
+                }
+              },
+              "section_title": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading2",
+                  "label": "Section Title",
+                  "placeholder": "Section Title"
+                }
+              },
+              "section_subtitle": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+                  "label": "Section Subtitle",
+                  "placeholder": "Section Subtitle"
+                }
+              },
+              "button_placeholder": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+                  "label": "Button Placeholder",
+                  "placeholder": "Button Placeholder"
+                }
+              }
+            },
+            "repeat": {}
+          },
+          "testimonials": {
+            "type": "Slice",
+            "fieldset": "Testimonials",
+            "description": "Testimonials",
+            "icon": "account_balance_wallet",
+            "display": "list",
+            "non-repeat": {
+              "hint_text": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading3",
+                  "label": "Hint Text",
+                  "placeholder": "Hint Text"
+                }
+              },
+              "section_title": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading2",
+                  "label": "Section Title",
+                  "placeholder": "Section Title"
+                }
+              },
+              "section_subtitle": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+                  "label": "Section Subtitle",
+                  "placeholder": "Section Subtitle"
+                }
+              }
+            },
+            "repeat": {
+              "testimonial_person_image": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "Testimonial Person Image"
+                }
+              },
+              "testimonial_text": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+                  "label": "Testimonial Text",
+                  "placeholder": "Testimonial Text"
+                }
+              },
+              "author": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+                  "label": "Author",
+                  "placeholder": "Author"
+                }
+              },
+              "role": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+                  "label": "Role",
+                  "placeholder": "Role"
+                }
+              },
+              "rating": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+                  "label": "Rating",
+                  "placeholder": "Rating"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

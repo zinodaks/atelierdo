@@ -1,0 +1,97 @@
+{
+    "Main": {
+        "footer_title": {
+            "type": "StructuredText",
+            "config": {
+                "single": "heading3",
+                "label": "Footer Title",
+                "placeholder": "Footer Title"
+            }
+        },
+        "footer_description": {
+            "type": "StructuredText",
+            "config": {
+                "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
+                "label": "Footer Description",
+                "placeholder": "Footer Description"
+            }
+        },
+        "contact_title": {
+            "type": "StructuredText",
+            "config": {
+                "single": "heading3",
+                "label": "Contact Title",
+                "placeholder": "Contact Title"
+            }
+        },
+        "menu_title": {
+            "type": "StructuredText",
+            "config": {
+                "single": "heading3",
+                "label": "Menu Title",
+                "placeholder": "Menu Title"
+            }
+        },
+        "phone_number": {
+            "type": "StructuredText",
+            "config": {
+                "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
+                "label": "Phone Number",
+                "placeholder": "Phone Number"
+            }
+        },
+        "email": {
+            "type": "StructuredText",
+            "config": {
+                "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
+                "label": "Email",
+                "placeholder": "Email"
+            }
+        },
+        "address": {
+            "type": "StructuredText",
+            "config": {
+                "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
+                "label": "Address",
+                "placeholder": "Address"
+            }
+        },
+        "home_link": {
+            "type": "Link",
+            "config": {
+                "label": "Home Link",
+                "placeholder": "Home Link"
+            }
+        },
+        "products_link": {
+            "type": "Link",
+            "config": {
+                "label": "Products Link",
+                "placeholder": "Products Link"
+            }
+        },
+        "contact_link": {
+            "type": "Link",
+            "config": {
+                "label": "Contact Link",
+                "placeholder": "Contact Link"
+            }
+        },
+        "copyright_text": {
+            "type": "StructuredText",
+            "config": {
+                "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
+                "label": "Copyright Text",
+                "placeholder": "Copyright Text"
+            }
+        },
+        "developer_contacts": {
+            "type": "StructuredText",
+            "config": {
+                "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
+                "label": "Developer Contacts",
+                "placeholder": "Developer Contacts"
+            }
+        }
+    }
+}
