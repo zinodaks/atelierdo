@@ -1,7 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
 import { RichText } from "prismic-reactjs";
-import { GatsbyImage } from "gatsby-plugin-image";
 import styled from "styled-components";
 import HeroImage from "../../../assets/hero-image.png";
 
