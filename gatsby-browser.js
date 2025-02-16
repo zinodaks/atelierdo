@@ -1,6 +1,6 @@
 import React from "react";
 import { navigate } from "gatsby";
-import Layout from "./src/components/layout/layout.js";
+import Layout from "./src/components/layout/layout";
 
 import { PrismicPreviewProvider } from "gatsby-plugin-prismic-previews";
 
