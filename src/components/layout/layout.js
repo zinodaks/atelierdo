@@ -8,7 +8,6 @@ function Layout({ data, children, location }) {
   const [isPermanent, setIsPermanent] = useState(false);
 
   if (!data || !data.allPrismicNavbar || !data.allPrismicFooter) {
-    console.log("hello world!");
     return null; // Prevents errors when data is missing
   }
 
