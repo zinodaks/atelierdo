@@ -36,13 +36,6 @@ exports.createPages = async ({ graphql, actions }) => {
     }
   `);
 
-  console.log("GraphQL result:", JSON.stringify(queryData, null, 2));
-
-  if (queryData.errors) {
-    console.error("GraphQL Errors:", queryData.errors);
-    throw new Error("GraphQL query failed");
-  }
-
   //CREATE HOME PAGE
   queryData.data.allPrismicHomepage.nodes.forEach((page) => {
     createPage({

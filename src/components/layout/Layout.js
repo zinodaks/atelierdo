@@ -7,6 +7,10 @@ import { NavbarContext } from "./NavbarContext";
 function Layout({ data, children, location }) {
   const [isPermanent, setIsPermanent] = useState(false);
 
+  if (!data || !data.allPrismicNavbar || !data.allPrismicFooter) {
+    return null; // Prevents errors when data is missing
+  }
+
   return (
     <>
       <GlobalStyle />

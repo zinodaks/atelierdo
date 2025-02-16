@@ -48,5 +48,11 @@ module.exports = {
         },
       },
     },
+    {
+      resolve: "gatsby-plugin-prismic-previews",
+      options: {
+        repositoryName: "atelierdo", // Replace with your repository name
+      },
+    },
   ],
 };

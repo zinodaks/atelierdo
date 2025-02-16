@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { graphql } from "gatsby";
 import { RichText } from "prismic-reactjs";
 import styled from "styled-components";
-import { MapContainer, TileLayer, CircleMarker, Popup } from "react-leaflet";
+// import { MapContainer, TileLayer, CircleMarker, Popup } from "react-leaflet";
 
 const Wrapper = styled.div`
   margin: 2em 0em 6em;
@@ -84,13 +84,23 @@ const BottomBorder = styled.div`
 
 function FindUs({ slice }) {
   const [isClient, setIsClient] = useState(false);
+  const [MapContainer, setMapContainer] = useState(null);
+  const [TileLayer, setTileLayer] = useState(null);
+  const [CircleMarker, setCircleMarker] = useState(null);
+  const [Popup, setPopup] = useState(null);
   const position = [-4.300619, 15.310679]; // City Market Coordinates
 
   useEffect(() => {
     setIsClient(true);
+    import("react-leaflet").then((module) => {
+      setMapContainer(module.MapContainer);
+      setTileLayer(module.TileLayer);
+      setCircleMarker(module.CircleMarker);
+      setPopup(module.Popup);
+    });
   }, []);
 
-  if (!isClient) {
+  if (!isClient || !MapContainer || !TileLayer || !CircleMarker || !Popup) {
     return <p>Loading Map...</p>;
   }
 
@@ -105,9 +115,9 @@ function FindUs({ slice }) {
             <BottomBorder />
           </TitleSection>
         </TitleWrapper>
-        <MapWrapper>
+        {/* <MapWrapper>
           <MapContainer
-            center={position}
+            center={position} 
             zoom={100}
             style={{ height: "100%", width: "100%" }}
           >
@@ -129,7 +139,7 @@ function FindUs({ slice }) {
               </Popup>
             </CircleMarker>
           </MapContainer>
-        </MapWrapper>
+        </MapWrapper> */}
       </Inner>
     </Wrapper>
   );

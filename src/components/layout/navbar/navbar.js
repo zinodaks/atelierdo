@@ -177,8 +177,6 @@ function Navbar({ isPermanent, navbarItems }) {
   const [isSolid, setIsSolid] = useState(false);
   const [hasShadow, setHasShadow] = useState(false);
 
-  console.log(isPermanent);
-
   useEffect(() => {
     window.addEventListener("scroll", () =>
       handleScroll(setIsSolid, setHasShadow)

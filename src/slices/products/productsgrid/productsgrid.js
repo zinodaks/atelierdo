@@ -3,6 +3,7 @@ import { graphql, Link } from "gatsby";
 import { RichText } from "prismic-reactjs";
 import { GatsbyImage } from "gatsby-plugin-image";
 import styled from "styled-components";
+import LogoImage from "../../../assets/logo-removedbg.png";
 
 const Wrapper = styled.div``;
 
@@ -153,7 +154,7 @@ function ProductsGrid({ slice }) {
             return (
               <CardContainer item={`card-container-${index}`}>
                 <Link
-                  to={item.product_details.url}
+                  to={item?.product_details?.url || LogoImage}
                   style={{ textDecoration: "none", color: "inherit" }}
                 >
                   <CardTop>
