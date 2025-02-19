@@ -1,10 +1,9 @@
 import React from "react";
 import { graphql } from "gatsby";
 import { RichText } from "prismic-reactjs";
+import { GatsbyImage } from "gatsby-plugin-image";
 import styled from "styled-components";
 import { GiCheckMark } from "react-icons/gi";
-import Cookie from "../../../assets/cookie.jpg";
-import ChocoOats from "../../../assets/images/products/chocolate-oats.jpg";
 
 const Wrapper = styled.div`
   padding: 5em 0em 2em;
@@ -30,10 +29,11 @@ const ImageContainer = styled.div`
   flex: 1;
   @media (min-width: 769px) {
     margin-right: 2em;
+    max-height: 425px;
   }
 `;
 
-const Image = styled.img`
+const Image = styled(GatsbyImage)`
   width: 100%;
   height: 100%;
   object-fit: fill;
@@ -60,6 +60,10 @@ const Title = styled.h2`
 const IngredientsList = styled.ul`
   list-style: none;
   padding-left: 0;
+
+  @media (min-width: 769px) {
+    columns: 3;
+  }
 `;
 
 const ListItem = styled.li`
@@ -83,7 +87,7 @@ function ImageAndIngredients({ slice }) {
     <Wrapper>
       <Inner>
         <ImageContainer>
-          <Image src={ChocoOats} />
+          <Image image={slice.primary.product_image.gatsbyImageData} />
         </ImageContainer>
         <Container>
           <ProductTitle>
@@ -128,6 +132,9 @@ export const query = graphql`
       }
       ingredients_title {
         richText
+      }
+      product_image {
+        gatsbyImageData
       }
     }
     items {

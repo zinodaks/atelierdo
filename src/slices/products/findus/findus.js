@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { graphql } from "gatsby";
 import { RichText } from "prismic-reactjs";
 import styled from "styled-components";
-// import { MapContainer, TileLayer, CircleMarker, Popup } from "react-leaflet";
 
 const Wrapper = styled.div`
   margin: 2em 0em 6em;
@@ -115,9 +114,9 @@ function FindUs({ slice }) {
             <BottomBorder />
           </TitleSection>
         </TitleWrapper>
-        {/* <MapWrapper>
+        <MapWrapper>
           <MapContainer
-            center={position} 
+            center={position}
             zoom={100}
             style={{ height: "100%", width: "100%" }}
           >
@@ -139,7 +138,7 @@ function FindUs({ slice }) {
               </Popup>
             </CircleMarker>
           </MapContainer>
-        </MapWrapper> */}
+        </MapWrapper>
       </Inner>
     </Wrapper>
   );
