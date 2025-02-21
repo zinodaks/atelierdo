@@ -93,6 +93,7 @@ const Text = styled.p`
   color: #555;
   margin-bottom: 10px;
   font-family: "Play";
+  text-align: justify;
 
   @media (min-width: 1024px) and (max-width: 1439px) {
     font-size: 1.2rem;
@@ -100,7 +101,6 @@ const Text = styled.p`
 
   @media (max-width: 768px) {
     font-size: 1.2rem;
-    text-align: justify;
   }
 
   @media (max-width: 480px) {

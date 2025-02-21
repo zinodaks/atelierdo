@@ -14,6 +14,13 @@ module.exports = {
   plugins: [
     "gatsby-plugin-styled-components",
     "gatsby-plugin-image",
+    {
+      resolve: `gatsby-plugin-nprogress`,
+      options: {
+        color: `#ff3131`,
+        showSpinner: false,
+      },
+    },
     "gatsby-plugin-sitemap",
     {
       resolve: "gatsby-plugin-manifest",

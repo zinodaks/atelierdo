@@ -19,26 +19,6 @@ html {
   height: initial;
 }
 
-/* body {
-  position: relative;
-  overflow-x: hidden;
-}
-
-body::before {
-  content: "";
-  position: fixed; 
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: linear-gradient(rgba(247, 247, 247, 0.05), rgba(247, 247, 247, 0.05)),url(${bg});
-   background-size: 50%;
-  opacity: 0.1;
-  pointer-events: none; 
-  z-index: -1;
-}  */
-
-
 @font-face {
   font-family: 'Play';
   font-weight: 400;
